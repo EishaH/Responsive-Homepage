@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #163932
+    ;
+   
+}
+
+header{
+    width:100vw;
+    height:10vh;
+    background-color: #163932
+    ;
+}
+
+nav{
+    width:85vw;
+    height:10vh;
+    background-color: #163932;
+    margin:0 auto;
+    position: relative;
+}
+
+/* .nav.list{
+    display:inline-block;
+} */
+
+.list-item{
+    display: inline-block;
+    font-size: 1.5rem ;
+    padding: 0;
+    font-weight:600;
+    line-height: 10vh;
+    font-size: 2vw;
+    
+}
+
+.tag{
+    text-decoration: none;
+    /* font-size: 1.3rem; */
+    padding:0.2rem 0.9rem;
+    color:#b8b2a9
+
+}
+
+.input-box{
+    
+    position:absolute;
+    right:0;
+    top:50%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    outline: none;
+    transform: translateY(-50%);
+    background-color: #b8b2a9
+    ;
+    text-align: center;
+
+}
+
+.images{
+
+    width:85%;
+    /* height: 70vh; */
+    margin: 40px auto;
+    /* background-color: black
+    ; */
+    opacity: 1;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position:relative; */
+
+}
+
+
+
+.images img{
+    
+    opacity: 1;
+    border-radius: 130px;
+    size: 50px;
+    background-size: contain;
+    width:90%;
+    filter: drop-shadow(5px 5px 10px black);
+    margin:0 auto;
+}
+
+
+/* .images div:nth-child(even){
+         
+       
+    margin-top:180px;
+} */
+
+
+.text{
+    text-align: center;
+    font-size: 2rem;
+    padding:50px;
+}
+
+.cards{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    /* background-color: beige; */
+    width:85vw;
+    height: 50vh;
+    margin: 80px auto;
+    ; 
+}
+
+
+.card{
+    border-radius: 15px;
+    background-color: #163932
+
+    ;
+    height:55vh;
+    width: 20vw;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:20px 20px 80px 10px black ;
+    
+
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+       width: 50vw;
+       height:60vh;
+       margin:10px auto;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        height:fit-content;
+        
+    }
+  }
+
+  @media screen and (max-width: 600px){
+      .images{
+          display:flex;
+          /* flex-wrap: wrap; */
+          flex-direction: column;
+      
+          width:90%;
+          margin:30px auto;
+          /* background-color: thistle; */
+          /* position: relative; */
+
+      }
+
+       .images img{
+          border-radius: 19rem;
+         
+         
+        }
+      
+ 
+     .images div:nth-child(even){
+         
+       
+         margin-left:80px;
+         margin-top: auto;
+     }
+
+     .images div:nth-child(odd){
+        
+        
+        margin-right:80px;
+    }
+}
+      
+  
